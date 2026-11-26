@@ -88,7 +88,7 @@ Match every applicable row before acting. Use all listed skills; report any unav
 | Bug report, before proposing or writing a fix | `codee-root-cause` |
 | TypeScript implementation or review, naming a function or a file, placing a helper | `codee-ts-code-conventions` |
 | User-facing text on the site | `codee-ui-copy` |
-| The text of a CMS docs page, in mostrajs/cms | `codee-medusa-plugin-docs` |
+| The text of a CMS docs page, in mostrajs/cms | `codee-medusa-plugin-docs`, `codee-technical-writing` |
 | Write or restructure specifications | `codee-spec-writing` |
 | Working notes | `codee-spec-notes` |
 | Non-obvious finding worth recording, or looking one up | `codee-lessons` |

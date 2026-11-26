@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "skills": {
+    "codee-generate-pr-description": {
+      "source": "codee-sh/codee-skills",
+      "commit": "dcaaeeea07696e02a3055299e9cb0ca1066f3a08",
+      "sourceType": "github",
+      "skillPath": "general/codee-generate-pr-description/SKILL.md",
+      "computedHash": "10e3262319399ce2b79969a6e7723250c0a1dd7c3e66cee47c87d38f09af905d"
+    },
+    "codee-lessons": {
+      "source": "codee-sh/codee-skills",
+      "commit": "dcaaeeea07696e02a3055299e9cb0ca1066f3a08",
+      "sourceType": "github",
+      "skillPath": "general/codee-lessons/SKILL.md",
+      "computedHash": "f877d581b5114d3ec78278ed86c0840e71af0bb610b39e29c5e76868861961dc"
+    },
+    "codee-medusa-plugin-docs": {
+      "source": "codee-sh/codee-skills",
+      "commit": "69ad48e6d0141af74b7fee54cbb205b50cba977c",
+      "sourceType": "github",
+      "skillPath": "frameworks/medusa/codee-medusa-plugin-docs/SKILL.md",
+      "computedHash": "b9658714fa0e9a3c37611a6d2f02d2db670bd66207d07e123a5cabf7f8a406e1"
+    },
+    "codee-root-cause": {
+      "source": "codee-sh/codee-skills",
+      "commit": "dcaaeeea07696e02a3055299e9cb0ca1066f3a08",
+      "sourceType": "github",
+      "skillPath": "general/codee-root-cause/SKILL.md",
+      "computedHash": "66b847f4252f224b4aa6d04f34a83f784ca0ee81be07f4d295c56c86b1ff01d2"
+    },
+    "codee-skill-creator": {
+      "source": "codee-sh/codee-skills",
+      "commit": "dcaaeeea07696e02a3055299e9cb0ca1066f3a08",
+      "sourceType": "github",
+      "skillPath": "general/codee-skill-creator/SKILL.md",
+      "computedHash": "f082aa6b610fc8fd44eba1f4ff64e2697dddfbf711e7d3305cb67285443e9c48"
+    },
+    "codee-spec-notes": {
+      "source": "codee-sh/codee-skills",
+      "commit": "dcaaeeea07696e02a3055299e9cb0ca1066f3a08",
+      "sourceType": "github",
+      "skillPath": "general/codee-spec-notes/SKILL.md",
+      "computedHash": "50fb650819e0e48a4281c10bd500b9c37a8f60cf44b7d598b10a8ed8ddd1d6dd"
+    },
+    "codee-spec-writing": {
+      "source": "codee-sh/codee-skills",
+      "commit": "dcaaeeea07696e02a3055299e9cb0ca1066f3a08",
+      "sourceType": "github",
+      "skillPath": "general/codee-spec-writing/SKILL.md",
+      "computedHash": "c76f60988da97f61c316d6e68494b25cf9292863fc20d43692081f475aa3ea13"
+    },
+    "codee-technical-writing": {
+      "source": "codee-sh/codee-skills",
+      "commit": "69ad48e6d0141af74b7fee54cbb205b50cba977c",
+      "sourceType": "github",
+      "skillPath": "general/codee-technical-writing/SKILL.md",
+      "computedHash": "4c7b9406e494e7549cd44e00ad609d2907ad395ec9caee20d6f1a9d421384ac6"
+    },
+    "codee-ts-code-conventions": {
+      "source": "codee-sh/codee-skills",
+      "commit": "dcaaeeea07696e02a3055299e9cb0ca1066f3a08",
+      "sourceType": "github",
+      "skillPath": "general/codee-ts-code-conventions/SKILL.md",
+      "computedHash": "c28eb94ce312a633735db29673bb98b96003b2c2527b915c889b066f6bcc100a"
+    },
+    "codee-ui-copy": {
+      "source": "codee-sh/codee-skills",
+      "commit": "dcaaeeea07696e02a3055299e9cb0ca1066f3a08",
+      "sourceType": "github",
+      "skillPath": "general/codee-ui-copy/SKILL.md",
+      "computedHash": "986488e643cdabeed9741fdd1cf27a02123727df48e28f3dc6cf09b9754df739"
+    }
+  }
+}
