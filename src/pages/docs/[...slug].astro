@@ -32,7 +32,7 @@ const githubUrl = page.data.source
   <Docs
     client:load
     transition:persist="docs"
-    pathname={Astro.url.pathname}
+    pathname={page.url}
     params={Astro.params}
     tree={pageTree}
     title={page.data.title}
