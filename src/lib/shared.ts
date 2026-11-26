@@ -1,6 +1,9 @@
 import { createGetUrl } from "fumadocs-core/source"
 
 export const appName = "Mostra"
+/** The home page's description, the opening sentence of the plugin's README. */
+export const homeDescription =
+  "Mostra is a CMS for Medusa v2 that keeps your content in your store's own project."
 export const docsRoute = "/docs"
 /** The CMS docs, which every link to the docs opens: `/docs` itself only redirects here. */
 export const cmsDocsRoute = `${docsRoute}/cms`
