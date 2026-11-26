@@ -5,9 +5,9 @@ import fumadocs from "@fumadocs/astro"
 
 export default defineConfig({
   site: "https://mostrajs.com",
-  redirects: {
-    "/docs": "/docs/cms",
-  },
+  // Each page is a file, docs/cms/fields.html, so that Netlify serves /docs/cms/fields as linked,
+  // without redirecting it to a trailing slash.
+  build: { format: "file" },
   integrations: [
     fumadocs({
       components: "./src/components/mdx.tsx",
