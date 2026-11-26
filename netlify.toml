@@ -7,3 +7,9 @@
 
 [build.environment]
   NODE_VERSION = "24"
+
+# /docs has no page of its own: the CMS docs are its only product for now.
+[[redirects]]
+  from = "/docs"
+  to = "/docs/cms"
+  status = 301
