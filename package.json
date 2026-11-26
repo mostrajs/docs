@@ -1,0 +1,41 @@
+{
+  "name": "mostra-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync:docs": "node scripts/sync-docs.ts",
+    "dev": "node scripts/sync-docs.ts && astro dev",
+    "build": "node scripts/sync-docs.ts && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "oxlint src scripts",
+    "typecheck": "astro sync && tsc --noEmit",
+    "format": "prettier --write \"{src,scripts}/**/*.{ts,tsx,astro}\" astro.config.mjs",
+    "format:check": "prettier --check \"{src,scripts}/**/*.{ts,tsx,astro}\" astro.config.mjs",
+    "pr:create": "bash scripts/create-pr.sh"
+  },
+  "dependencies": {
+    "@astrojs/react": "^7.1.7",
+    "@fumadocs/astro": "0.3.0",
+    "astro": "^7.4.10",
+    "fumadocs-core": "16.19.7",
+    "fumadocs-ui": "npm:@fumadocs/base-ui@16.19.7",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sharp": "^0.35.5",
+    "takumi-js": "^2.20.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/mdx": "^2.0.14",
+    "@types/node": "^24.19.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "oxlint": "^1.95.0",
+    "prettier": "^3.10.1",
+    "prettier-plugin-astro": "^1.1.2",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2"
+  },
+  "packageManager": "yarn@4.19.0+sha512.2cb9e5a36f7f11f2bc6ff444830d87368d419e0d83b6a0fb6077d3e6fed0f476c9514dff4ba4d84b049bd34ef32954e550f264ad2fbbfebcba6c89e869530bba"
+}

@@ -1,0 +1,9 @@
+# Netlify builds the site from develop, the production branch, and a deploy preview for every PR.
+# The build syncs the CMS docs from the latest release of mostrajs/cms first (scripts/sync-docs.ts).
+
+[build]
+  command = "yarn build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"

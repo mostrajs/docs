@@ -1,0 +1,26 @@
+{
+  "title": "CMS",
+  "description": "@mostrajs/cms",
+  "root": true,
+  "pages": [
+    "index",
+    "---Content modeling---",
+    "models",
+    "collections",
+    "blocks",
+    "fields",
+    "media",
+    "validation",
+    "---Admin---",
+    "admin",
+    "field-components",
+    "translations",
+    "---Storefront---",
+    "store-api",
+    "---Extending---",
+    "workflows",
+    "---Contributing---",
+    "development",
+    "tests"
+  ]
+}

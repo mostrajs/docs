@@ -1,0 +1,13 @@
+# Labels a PR by its branch prefix (actions/labeler v7, `head-branch` regexps).
+
+"type: feature":
+  - head-branch: ["^feat/", "^feature/"]
+
+"type: bug":
+  - head-branch: ["^fix/", "^bug/"]
+
+"type: chore":
+  - head-branch: ["^refactor/", "^chore/", "^deps/"]
+
+"type: docs":
+  - head-branch: ["^docs/"]

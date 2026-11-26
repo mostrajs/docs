@@ -1,0 +1,42 @@
+# Build output
+dist/
+# Generated types
+.astro/
+
+# Pages and media synced from mostrajs/cms by scripts/sync-docs.ts; the sidebar's meta.json files are ours
+content/docs/cms/**/*.mdx
+public/docs-assets/
+
+# Dependencies
+node_modules/
+
+# Yarn 4
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
+
+# Netlify CLI
+.netlify/
+
+# macOS
+.DS_Store
+
+# Agents: installed skills and local state
+.agents
+.claude
+.codex
+.ai/pr-description.md
+.ai/notes/

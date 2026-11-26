@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "baseBranch": "develop",
+  "validation": {
+    "commands": ["yarn lint", "yarn typecheck", "yarn format:check", "yarn build"]
+  },
+  "lessons": {
+    "path": ".ai/lessons",
+    "index": ".ai/lessons.md",
+    "modulesFrom": ".ai/specs",
+    "areas": ["site", "docs-sync", "tooling"],
+    "topics": ["astro", "fumadocs", "mdx", "netlify", "tooling", "ui"]
+  }
+}
