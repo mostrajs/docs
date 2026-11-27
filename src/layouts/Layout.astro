@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from "astro:transitions"
 import "@/styles/global.css"
+import { appName } from "@/lib/shared"
 
 interface Props {
   title: string
@@ -9,6 +10,12 @@ interface Props {
 }
 
 const { title, description, image } = Astro.props
+// Pages are built as files, so the pathname ends in .html: the page's address leaves it out.
+const pageUrl = new URL(
+  Astro.url.pathname.replace(/(index)?\.html$/, ""),
+  Astro.site
+).href
+const imageUrl = image && new URL(image, Astro.site).href
 ---
 
 <html lang="en" transition:animate="none">
@@ -20,7 +27,14 @@ const { title, description, image } = Astro.props
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
-    {image && <meta property="og:image" content={image} />}
+    <link rel="canonical" href={pageUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={appName} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    <meta name="twitter:card" content="summary_large_image" />
     <ClientRouter />
   </head>
   <body class="flex flex-col min-h-screen">

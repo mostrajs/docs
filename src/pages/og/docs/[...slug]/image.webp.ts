@@ -1,7 +1,6 @@
 import type { APIRoute, GetStaticPaths, InferGetStaticPropsType } from "astro"
-import { generateOGImage } from "fumadocs-ui/og/takumi"
+import { buildOgImageResponse } from "@/components/og-image"
 import { source } from "@/lib/source"
-import { appName } from "@/lib/shared"
 
 export const prerender = true
 
@@ -14,11 +13,9 @@ export const getStaticPaths = (() => {
 
 export const GET: APIRoute<InferGetStaticPropsType<typeof getStaticPaths>> = ({
   props: { page },
-}) => {
-  return generateOGImage({
+}) =>
+  buildOgImageResponse({
+    eyebrow: "Documentation",
     title: page.data.title,
     description: page.data.description,
-    site: appName,
-    format: "webp",
   })
-}

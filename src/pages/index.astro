@@ -1,16 +1,17 @@
 ---
 import Layout from "@/layouts/Layout.astro"
 import { Home } from "@/components/home"
-import { cmsDocsRoute } from "@/lib/shared"
+import { cmsDocsRoute, homeDescription } from "@/lib/shared"
 
 // A placeholder until the landing page is built.
 ---
 
 <Layout
   title="Mostra | CMS for Medusa.js"
-  description="Model content as Medusa data models, edit it in Medusa Admin with drafts, versions and blocks, and serve it through the store API."
+  description={homeDescription}
+  image="/og/home.webp"
 >
-  <Home client:load pathname={Astro.url.pathname} params={Astro.params}>
+  <Home client:load pathname="/" params={Astro.params}>
     <div class="p-4 flex flex-col items-center justify-center text-center flex-1">
       <h1 class="text-xl font-bold mb-2">Mostra</h1>
       <p class="text-fd-muted-foreground mb-4">CMS for Medusa.js</p>
